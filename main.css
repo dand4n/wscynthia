@@ -169,6 +169,24 @@ hr {
 
   100% {
     opacity: 1; } }
+@-webkit-keyframes slide-up {
+  0% {
+    margin-top: 32%; }
+
+  100% {
+    margin-top: 20%; } }
+@-moz-keyframes slide-up {
+  0% {
+    margin-top: 32%; }
+
+  100% {
+    margin-top: 20%; } }
+@keyframes slide-up {
+  0% {
+    margin-top: 32%; }
+
+  100% {
+    margin-top: 20%; } }
 .game-container {
   margin-top: 40px;
   position: relative;
@@ -188,50 +206,79 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .game-container .game-message {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(238, 228, 218, 0.5);
-    z-index: 100;
-    text-align: center;
-    -webkit-animation: fade-in 800ms ease 1200ms;
-    -moz-animation: fade-in 800ms ease 1200ms;
-    animation: fade-in 800ms ease 1200ms;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    animation-fill-mode: both; }
-    .game-container .game-message p {
-      font-size: 60px;
-      font-weight: bold;
-      height: 60px;
-      line-height: 60px;
-      margin-top: 222px; }
-    .game-container .game-message .lower {
+
+.game-message {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(238, 228, 218, 0.73);
+  z-index: 100;
+  padding-top: 40px;
+  text-align: center;
+  -webkit-animation: fade-in 800ms ease 1200ms;
+  -moz-animation: fade-in 800ms ease 1200ms;
+  animation: fade-in 800ms ease 1200ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both; }
+  .game-message p {
+    font-size: 60px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 222px; }
+  .game-message .lower {
+    display: block;
+    margin-top: 29px; }
+  .game-message .mailing-list {
+    margin-top: 52px; }
+    .game-message .mailing-list strong {
       display: block;
-      margin-top: 59px; }
-    .game-container .game-message a {
-      display: inline-block;
-      background: #8f7a66;
-      border-radius: 3px;
-      padding: 0 20px;
-      text-decoration: none;
-      color: #f9f6f2;
-      height: 40px;
-      line-height: 42px;
-      margin-left: 9px; }
-      .game-container .game-message a.keep-playing-button {
-        display: none; }
-    .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
-      .game-container .game-message.game-won a.keep-playing-button {
-        display: inline-block; }
-    .game-container .game-message.game-won, .game-container .game-message.game-over {
-      display: block; }
+      margin-bottom: 10px; }
+    .game-message .mailing-list .mailing-list-email-field {
+      width: 230px;
+      margin-right: 5px; }
+  .game-message a {
+    display: inline-block;
+    background: #8f7a66;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    margin-left: 9px; }
+    .game-message a.keep-playing-button {
+      display: none; }
+  .game-message .score-sharing {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; }
+  .game-message.game-won {
+    background: rgba(237, 194, 46, 0.5);
+    color: #f9f6f2; }
+    .game-message.game-won a.keep-playing-button {
+      display: inline-block; }
+  .game-message.game-won, .game-message.game-over {
+    display: block; }
+    .game-message.game-won p, .game-message.game-over p {
+      -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
+      -moz-animation: slide-up 1.5s ease-in-out 2500ms;
+      animation: slide-up 1.5s ease-in-out 2500ms;
+      -webkit-animation-fill-mode: both;
+      -moz-animation-fill-mode: both;
+      animation-fill-mode: both; }
+    .game-message.game-won .mailing-list, .game-message.game-over .mailing-list {
+      -webkit-animation: fade-in 1.5s ease-in-out 2500ms;
+      -moz-animation: fade-in 1.5s ease-in-out 2500ms;
+      animation: fade-in 1.5s ease-in-out 2500ms;
+      -webkit-animation-fill-mode: both;
+      -moz-animation-fill-mode: both;
+      animation-fill-mode: both; }
 
 .grid-container {
   position: absolute;
@@ -539,12 +586,20 @@ hr {
   color: #f9f6f2;
   height: 40px;
   line-height: 42px;
+  cursor: pointer;
   display: block;
   text-align: center;
   float: right; }
 
 .game-explanation {
   margin-top: 50px; }
+  
+.sharing {
+  margin-top: 20px;
+  text-align: center; }
+  .sharing > iframe, .sharing > span, .sharing > form {
+    display: inline-block;
+    vertical-align: middle; }
 
 @media screen and (max-width: 520px) {
   html, body {
@@ -602,7 +657,8 @@ hr {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    .game-container .game-message {
+
+.game-message {
       display: none;
       position: absolute;
       top: 0;
@@ -611,6 +667,7 @@ hr {
       left: 0;
       background: rgba(238, 228, 218, 0.5);
       z-index: 100;
+      padding-top: 40px;
       text-align: center;
       -webkit-animation: fade-in 800ms ease 1200ms;
       -moz-animation: fade-in 800ms ease 1200ms;
@@ -618,7 +675,7 @@ hr {
       -webkit-animation-fill-mode: both;
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
-      .game-container .game-message p {
+      .game-message p {
         font-size: 60px;
         font-weight: bold;
         height: 60px;
@@ -627,6 +684,14 @@ hr {
       .game-container .game-message .lower {
         display: block;
         margin-top: 59px; }
+      .game-message .mailing-list {
+      margin-top: 52px; }
+      .game-message .mailing-list strong {
+        display: block;
+        margin-bottom: 10px; }
+      .game-message .mailing-list .mailing-list-email-field {
+        width: 230px;
+        margin-right: 5px; }
       .game-container .game-message a {
         display: inline-block;
         background: #8f7a66;
@@ -636,9 +701,14 @@ hr {
         color: #f9f6f2;
         height: 40px;
         line-height: 42px;
+        cursor: pointer;
         margin-left: 9px; }
         .game-container .game-message a.keep-playing-button {
           display: none; }
+      .game-message .score-sharing {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
         color: #f9f6f2; }
@@ -646,6 +716,20 @@ hr {
           display: inline-block; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
         display: block; }
+      .game-message.game-won p, .game-message.game-over p {
+        -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
+        -moz-animation: slide-up 1.5s ease-in-out 2500ms;
+        animation: slide-up 1.5s ease-in-out 2500ms;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        animation-fill-mode: both; }
+      .game-message.game-won .mailing-list, .game-message.game-over .mailing-list {
+        -webkit-animation: fade-in 1.5s ease-in-out 2500ms;
+        -moz-animation: fade-in 1.5s ease-in-out 2500ms;
+        animation: fade-in 1.5s ease-in-out 2500ms;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        animation-fill-mode: both; }
 
   .grid-container {
     position: absolute;
