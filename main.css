@@ -41,7 +41,7 @@ input {
       color: #9d948c; }
     input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder {
       color: #9d948c; }
-      
+
 .heading:after {
   content: "";
   display: block;
@@ -397,24 +397,24 @@ hr {
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     background: #ede0c8;
-    background: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1922157_10152094440844296_5666508434827737566_n.jpg');
+background: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1922157_10152094440844296_5666508434827737566_n.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-     background: #f2b179;
-     background: url('https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-prn1/t1.0-0/10002932_10152094423994296_9113292261916797988_a.jpg');}
+    background: #f2b179;
+background: url('https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-prn1/t1.0-0/10002932_10152094423994296_9113292261916797988_a.jpg');}
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
     background: #f59563;
-    background: url('https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn2/t1.0-9/10150531_10152094441949296_6750386589291240271_n.jpg'); }
+    background: url('https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn2/t1.0-9/10150531_10152094441949296_6750386589291240271_n.jpg');}
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f;
-    background: url('https://fbcdn-photos-a-a.akamaihd.net/hphotos-ak-prn1/t1.0-0/10169292_10152094423979296_4676869577382635790_a.jpg'); }
+    background: #f67c5f; 
+    background: url('https://fbcdn-photos-a-a.akamaihd.net/hphotos-ak-prn1/t1.0-0/10169292_10152094423979296_4676869577382635790_a.jpg');}
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
     background: #f65e3b;
-    background: url('https://fbcdn-photos-a-a.akamaihd.net/hphotos-ak-prn2/t1.0-0/10002955_10152094424164296_7978255955928695234_a.jpg'); }
+    background: url('https://fbcdn-photos-a-a.akamaihd.net/hphotos-ak-prn2/t1.0-0/10002955_10152094424164296_7978255955928695234_a.jpg');}
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
     background: #edcf72;
@@ -454,7 +454,7 @@ hr {
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
     background: #edc22e;
-    background: url('https://fbcdn-photos-b-a.akamaihd.net/hphotos-ak-frc3/t1.0-0/1609771_10152094424314296_7832042470186785622_a.jpg');
+     background: url('https://fbcdn-photos-b-a.akamaihd.net/hphotos-ak-frc3/t1.0-0/1609771_10152094424314296_7832042470186785622_a.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -593,7 +593,7 @@ hr {
 
 .game-explanation {
   margin-top: 50px; }
-  
+
 .sharing {
   margin-top: 20px;
   text-align: center; }
@@ -658,33 +658,33 @@ hr {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-.game-message {
-      display: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: rgba(238, 228, 218, 0.5);
-      z-index: 100;
-      padding-top: 40px;
-      text-align: center;
-      -webkit-animation: fade-in 800ms ease 1200ms;
-      -moz-animation: fade-in 800ms ease 1200ms;
-      animation: fade-in 800ms ease 1200ms;
-      -webkit-animation-fill-mode: both;
-      -moz-animation-fill-mode: both;
-      animation-fill-mode: both; }
-      .game-message p {
-        font-size: 60px;
-        font-weight: bold;
-        height: 60px;
-        line-height: 60px;
-        margin-top: 222px; }
-      .game-container .game-message .lower {
-        display: block;
-        margin-top: 59px; }
-      .game-message .mailing-list {
+  .game-message {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(238, 228, 218, 0.73);
+    z-index: 100;
+    padding-top: 40px;
+    text-align: center;
+    -webkit-animation: fade-in 800ms ease 1200ms;
+    -moz-animation: fade-in 800ms ease 1200ms;
+    animation: fade-in 800ms ease 1200ms;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both; }
+    .game-message p {
+      font-size: 60px;
+      font-weight: bold;
+      height: 60px;
+      line-height: 60px;
+      margin-top: 222px; }
+    .game-message .lower {
+      display: block;
+      margin-top: 29px; }
+    .game-message .mailing-list {
       margin-top: 52px; }
       .game-message .mailing-list strong {
         display: block;
@@ -692,30 +692,30 @@ hr {
       .game-message .mailing-list .mailing-list-email-field {
         width: 230px;
         margin-right: 5px; }
-      .game-container .game-message a {
-        display: inline-block;
-        background: #8f7a66;
-        border-radius: 3px;
-        padding: 0 20px;
-        text-decoration: none;
-        color: #f9f6f2;
-        height: 40px;
-        line-height: 42px;
-        cursor: pointer;
-        margin-left: 9px; }
-        .game-container .game-message a.keep-playing-button {
-          display: none; }
-      .game-message .score-sharing {
+    .game-message a {
+      display: inline-block;
+      background: #8f7a66;
+      border-radius: 3px;
+      padding: 0 20px;
+      text-decoration: none;
+      color: #f9f6f2;
+      height: 40px;
+      line-height: 42px;
+      cursor: pointer;
+      margin-left: 9px; }
+      .game-message a.keep-playing-button {
+        display: none; }
+    .game-message .score-sharing {
       display: inline-block;
       vertical-align: middle;
       margin-left: 10px; }
-      .game-container .game-message.game-won {
-        background: rgba(237, 194, 46, 0.5);
-        color: #f9f6f2; }
-        .game-container .game-message.game-won a.keep-playing-button {
-          display: inline-block; }
-      .game-container .game-message.game-won, .game-container .game-message.game-over {
-        display: block; }
+    .game-message.game-won {
+      background: rgba(237, 194, 46, 0.5);
+      color: #f9f6f2; }
+      .game-message.game-won a.keep-playing-button {
+        display: inline-block; }
+    .game-message.game-won, .game-message.game-over {
+      display: block; }
       .game-message.game-won p, .game-message.game-over p {
         -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
         -moz-animation: slide-up 1.5s ease-in-out 2500ms;
